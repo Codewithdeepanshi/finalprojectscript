@@ -1,6 +1,6 @@
 resource "aws_instance" "Banking_Project_DJP_Instance" {
   count         = 2
-  ami           = "ami-0522ab6e1ddcc7055"  # Replace with the latest Ubuntu 24.04 AMI ID
+  ami           = "ami-0dee22c13ea7a9a67"  # Replace with the latest Ubuntu 24.04 AMI ID
   instance_type = "t2.medium"
   subnet_id     = aws_subnet.Banking_Project_Subnet.id
 
@@ -68,5 +68,5 @@ resource "aws_instance" "Banking_Project_DJP_Instance" {
 
     EOF
 
-  key_name = "terraform"
+  key_name = "fornewproject"
 }
